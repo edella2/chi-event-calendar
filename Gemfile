@@ -5,7 +5,6 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-gem 'meetup_client'
 gem 'devise'
 gem 'rails', '~> 5.0.1'
 gem 'sqlite3'
@@ -18,6 +17,8 @@ gem 'jquery-rails'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 
+gem 'httparty'
+
 
 group :development, :test do
 
@@ -25,7 +26,7 @@ group :development, :test do
 end
 
 group :development do
-
+  gem 'dotenv-rails', :require => 'dotenv/rails-now'
   gem 'web-console', '>= 3.3.0'
   gem 'listen', '~> 3.0.5'
 
