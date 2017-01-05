@@ -7,6 +7,9 @@ end
 
 gem 'devise'
 gem 'rails', '~> 5.0.1'
+gem "simple_calendar", "~> 2.0"
+gem "twitter-bootstrap-rails"
+
 gem 'sqlite3'
 gem 'puma', '~> 3.0'
 gem 'sass-rails', '~> 5.0'
